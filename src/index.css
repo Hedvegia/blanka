@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 3px;
   color: rgba(228, 190, 125, 0.8);
   font-family: 'Montserrat', sans-serif;
@@ -46,6 +46,10 @@ img {
   width: 70%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.images {
+  width: 40%;
 }
 
 table {
@@ -63,6 +67,11 @@ table, th, td {
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: 1px;
   margin-bottom: 1em;
+}
+
+.scroller {
+  overflow-y: scroll;
+  scrollbar-color: rgba(229, 127, 165, 0.5)
 }
 
 

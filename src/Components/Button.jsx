@@ -8,6 +8,9 @@ const LineButton = styled.button`
   border: 1px solid ${props => props.theme.background};
   border-radius: 5px;
   outline: none;
+  ::-moz-focus-inner {
+    border: 0;
+  }
   color: ${props => props.theme.color};
   background: ${props => props.theme.background};
   :hover {
@@ -28,6 +31,9 @@ const CircleButton = styled.button`
   border-radius: 50%;
   font-size: 1.2em;
   outline: none;
+  ::-moz-focus-inner {
+    border: 0;
+  }
   background: ${props => props.theme.background};
   color: ${props => props.theme.color};
   :hover {
