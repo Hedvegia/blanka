@@ -1,10 +1,10 @@
-import React from 'react'
-import { Router, Route, Switch } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
+import React from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-import Dashboard from './Containers/Dashboard'
+import Dashboard from './Containers/Dashboard';
 
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
 export const App = () => {
   return (
@@ -14,5 +14,4 @@ export const App = () => {
       </Switch>
     </Router>
   )
-}
-
+};

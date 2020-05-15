@@ -14,18 +14,25 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-size: 2em;
-  height: 2.5em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 8px;
   color: #E57F9B;
+  text-align: center;
 `
 
 const SubTitle = styled.div`
-  height: 4em;
+  margin: 20px 0px 20px 0;
   color: #E57F9B;
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 8px;
+  text-align: center;
+`
+
+const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 export const Main = ({ moveOnPage }) => {
@@ -33,10 +40,10 @@ export const Main = ({ moveOnPage }) => {
     <Container id="main">
       <Title>Két keréken négy kapun át</Title>
       <SubTitle>Germus Blanka</SubTitle>
-      <div>
+      <ButtonContainer>
         <Button moveOnPage={() => moveOnPage('#map')} text={'Térkép'} type='Line' />
         <Button moveOnPage={() => moveOnPage('#essey')} text={'Szöveg'} type='Line' />
-      </div>
+      </ButtonContainer>
     </Container>
   )
 }
