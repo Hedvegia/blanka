@@ -30,6 +30,7 @@ export class Map extends Component {
           zIndex: '0'
         }}
         id="map"
+        className="Observe"
         ref={el => this.mapContainer = el}
       />
     )
