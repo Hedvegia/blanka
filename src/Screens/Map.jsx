@@ -48,8 +48,9 @@ const Container = styled.div`
 `
 
 const Image = styled.img`
-    height: auto;
     width: 100%;
+    height: auto;
+    max-height: 100%;
 `
 
 export class Map extends Component {
