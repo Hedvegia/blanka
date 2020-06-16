@@ -4,37 +4,39 @@ import styled from 'styled-components'
 const Foot = styled.div`
   background: #9FA9BA;
   color: #f8f9f8;
-  widht: 100%;
-  padding: 1em;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9em;
+  display: flex;
+  justify-content: center;
 `
 
-const Content = styled.div`
-  column-count: 3;
-  width: 93%;
-  margin-left: 7%
+const Container = styled.div`
+    width: 90%;
+    padding: 5px 0 5px 0;
 `
 
 const Subtitle = styled.div`
   font-size: 1.3em;
 `
 
+const Description = styled.p`
+  font-size: 0.9em;
+  margin-bottom: 10px;
+`
+
 export const Footer = () => {
-  return (
-    <Foot id='footer'>
-      <Content>
-        <Subtitle>Szakdolgozat: </Subtitle>
-        <p>Germus Blanka - BSc</p>
-        <p>Eötvös Loránd Tudományegyetem - Földtudományi szak</p>
-        <p>Térképész és Geoinformatikai szakirány</p>
-        <Subtitle>Konzulens: </Subtitle>
-        <p>Dr Irás Krisztina - Adjunktus</p>
-        <p>Eötvös Loránd Tudományegyetem - Informatikai Kar</p>
-        <p>Térképtudományi és Geoinformatikai Tanszék</p>
-        <Subtitle>Weblap: </Subtitle>
-        <p>Germus Kata Hedvig - Webfejlesztő</p>
-      </Content>
-    </Foot>
-  )
+    return (
+        <Foot id='footer'>
+            <Container>
+                <Subtitle>Szakdolgozat: Germus Blanka - BSc</Subtitle>
+                <Description>Eötvös Loránd Tudományegyetem - Földtudományi szak - Térképész és Geoinformatikai
+                    szakirány</Description>
+                <Subtitle>Konzulens: Dr Irás Krisztina - Adjunktus</Subtitle>
+                <Description>Eötvös Loránd Tudományegyetem - Informatikai Kar - Térképtudományi és Geoinformatikai
+                    Tanszék</Description>
+                <Subtitle>Weblap: Germus Kata Hedvig - Webfejlesztő</Subtitle>
+            </Container>
+        </Foot>
+    )
 }

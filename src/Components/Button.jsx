@@ -22,7 +22,7 @@ const LineButton = styled.button`
 
 const CircleButton = styled.button`
   position: sticky;
-  float:right;
+  float: right;
   right: 2rem;
   bottom: 2rem;
   height: 3.5em;

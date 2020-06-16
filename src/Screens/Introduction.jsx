@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Button } from './Button'
+import { Button } from '../Components/Button'
 
 const Container = styled.div`
   display: flex;
@@ -14,29 +14,36 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-size: 2em;
-  height: 2.5em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 8px;
   color: #E57F9B;
+  text-align: center;
 `
 
 const SubTitle = styled.div`
-  height: 4em;
+  margin: 20px 0px 20px 0;
   color: #E57F9B;
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 8px;
+  text-align: center;
 `
 
-export const Main = ({ moveOnPage }) => {
+const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const Introduction = ({ moveOnPage }) => {
   return (
     <Container id="main">
       <Title>Két keréken négy kapun át</Title>
       <SubTitle>Germus Blanka</SubTitle>
-      <div>
+      <ButtonContainer>
         <Button moveOnPage={() => moveOnPage('#map')} text={'Térkép'} type='Line' />
-        <Button moveOnPage={() => moveOnPage('#essey')} text={'Szöveg'} type='Line' />
-      </div>
+        <Button moveOnPage={() => moveOnPage('#essay')} text={'Szöveg'} type='Line' />
+      </ButtonContainer>
     </Container>
   )
 }
