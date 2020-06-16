@@ -17,11 +17,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   position: relative;
+  width: 100%;
 `
 
 const TextContainer = styled.div`
     display: flex;
     justify-content: center;
+    width: 100%;
 `
 
 const Text = styled.div`
@@ -29,7 +31,7 @@ const Text = styled.div`
   flex-direction: column;
   margin-top: 0;
   margin-bottom: 12em;
-  width:  55%;
+  width:  70%;
   text-align: justify;
   div {
     color: rgba(0, 0, 0, 0.8);
@@ -387,70 +389,72 @@ export class Essay extends Component {
                             év, helyszín, típus és megítélés szerinti listája
                             Forrás: [x], [y] és tapasztalat alapján saját szerkesztés
                         </div>
-                        <table style={{width: '90%'}}>
-                            <thead>
-                            <tr>
-                                <th>Év</th>
-                                <th>Útvonal</th>
-                                <th>Típus</th>
-                                <th>Megítélés</th>
-                            </tr>
-                            </thead>
-                            <tbody>
+                        <div style={{overflowX: 'scroll'}}>
+                            <table style={{width: '90%'}}>
+                                <thead>
+                                <tr>
+                                    <th>Év</th>
+                                    <th>Útvonal</th>
+                                    <th>Típus</th>
+                                    <th>Megítélés</th>
+                                </tr>
+                                </thead>
+                                <tbody>
 
-                            <tr>
-                                <td>1996-2001</td>
-                                <td>Tapolcai elágazás -Gyermekváros</td>
-                                <td>kerékpárút</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2007</td>
-                                <td>Szinva terasz - Erzsébet tér</td>
-                                <td>kerékpárút</td>
-                                <td>műszaki paramértereit tekintve nem nevezhető kerékpárútnak</td>
-                            </tr>
-                            <tr>
-                                <td>2007</td>
-                                <td>Észak-Déli kerékpárút I. üteme (Csabai kapu - Ifjúság u. - Katalin u. -
-                                    Bajcsy-Zsilinszky u)
-                                </td>
-                                <td>részben elválasztás nélküli, részben osztóvonallal elválasztott kétirányú,
-                                    egyoldali
-                                    gyalog- és kerékpárút
-                                </td>
-                                <td>baleseti gócpont</td>
-                            </tr>
-                            <tr>
-                                <td>2008-2009</td>
-                                <td>Metro áruház - Keleti Auchan</td>
-                                <td>kétirányú elválasztás nélküli gyalog- és kerékpárút</td>
-                                <td>a kitáblázáson kívül a teljes forgalomtechnikai kialakítás hiányzik</td>
-                            </tr>
-                            <tr>
-                                <td>2011-2012</td>
-                                <td>Tiszai pályaudvar - Vár utca</td>
-                                <td>többségében egyoldali, kétirányú kerékpárút és/vagy gyalog- és kerékpárút</td>
-                                <td>Nem korszerű és nem biztonságos, de 12 km hosszával a város legnagyobb
-                                    kerékpárforgalmi nyomvonal
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2014</td>
-                                <td>Szirma – Martintelep</td>
-                                <td>elválasztás nélküli egyoldali kétirányú gyalog- és kerékpárút</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2018-</td>
-                                <td>Katalin utca - Bosch</td>
-                                <td>kivitelezés alatt áll, többségében a járda átalakításával gyalog- és
-                                    kerékpárút
-                                </td>
-                                <td>a szakasz jelenleg kivitelezés alatt áll</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                <tr>
+                                    <td>1996-2001</td>
+                                    <td>Tapolcai elágazás -Gyermekváros</td>
+                                    <td>kerékpárút</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2007</td>
+                                    <td>Szinva terasz - Erzsébet tér</td>
+                                    <td>kerékpárút</td>
+                                    <td>műszaki paramértereit tekintve nem nevezhető kerékpárútnak</td>
+                                </tr>
+                                <tr>
+                                    <td>2007</td>
+                                    <td>Észak-Déli kerékpárút I. üteme (Csabai kapu - Ifjúság u. - Katalin u. -
+                                        Bajcsy-Zsilinszky u)
+                                    </td>
+                                    <td>részben elválasztás nélküli, részben osztóvonallal elválasztott kétirányú,
+                                        egyoldali
+                                        gyalog- és kerékpárút
+                                    </td>
+                                    <td>baleseti gócpont</td>
+                                </tr>
+                                <tr>
+                                    <td>2008-2009</td>
+                                    <td>Metro áruház - Keleti Auchan</td>
+                                    <td>kétirányú elválasztás nélküli gyalog- és kerékpárút</td>
+                                    <td>a kitáblázáson kívül a teljes forgalomtechnikai kialakítás hiányzik</td>
+                                </tr>
+                                <tr>
+                                    <td>2011-2012</td>
+                                    <td>Tiszai pályaudvar - Vár utca</td>
+                                    <td>többségében egyoldali, kétirányú kerékpárút és/vagy gyalog- és kerékpárút</td>
+                                    <td>Nem korszerű és nem biztonságos, de 12 km hosszával a város legnagyobb
+                                        kerékpárforgalmi nyomvonal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2014</td>
+                                    <td>Szirma – Martintelep</td>
+                                    <td>elválasztás nélküli egyoldali kétirányú gyalog- és kerékpárút</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2018-</td>
+                                    <td>Katalin utca - Bosch</td>
+                                    <td>kivitelezés alatt áll, többségében a járda átalakításával gyalog- és
+                                        kerékpárút
+                                    </td>
+                                    <td>a szakasz jelenleg kivitelezés alatt áll</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div>
                             A miskolci kerékpárhálózat hossza csaknem 18 kilométer, körülbelül 24 helyszínen van
                             kihelyezett „P” alakú kerékpártámasz, mégsem biztosított a kerékpárok megfelelő
@@ -976,27 +980,30 @@ export class Essay extends Component {
                             (XIV.. kötet). Szekszárd: Babits Kiadó Rt.
                         </div>
                         <div>
-                            CC BY-SA. (dátum nélk.). Welcome to the QGIS project! Letöltés dátuma: 2019. május 09.,
-                            forrás: https://qgis.org/hu/site/
+                            CC BY-SA. (dátum nélk.). Welcome to the QGIS project! Letöltés dátuma: 2019. május 09.
+                            Forrás:<a href="https://qgis.org/hu/site/">qgis</a>
                         </div>
                         <div>
-                            Coast, S. (dátum nélk.). OpenStreetMap. Letöltés dátuma: 2019. 05 16, forrás:
-                            https://www.openstreetmap.org/#map=16/48.0509/20.7701&amp;layers=C
+                            Coast, S. (dátum nélk.). OpenStreetMap. Letöltés dátuma: 2019. 05. 16.
+                            Forrás:<a href="https://www.openstreetmap.org/#map=16/48.0509/20.7701&amp;layers=C">open
+                            street map</a>
                         </div>
                         <div>
-                            Csanálossi, B. (2003). Miskolc : várostörténeti kalauz. (L. Méhes, Szerk.) Miskolc:
-                            Bíbor
+                            Csanálossi, B. (2003). Miskolc : várostörténeti kalauz. (L. Méhes, Szerk.) Miskolc: Bíbor
                             Kiadó.
                         </div>
                         <div>
                             Dallos, A. (1982). Miskolc. (A. Schiffer, Szerk.) Budapest: Panoráma.
                         </div>
                         <div>
-                            Eurobarometer, S. (2014). QUALITY OF TRANSPORT. Európai Unió. Forrás:
-                            http://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_422a_en.pdf
+                            Eurobarometer, S. (2014). QUALITY OF TRANSPORT. Európai Unió.
+                            Forrás:<a
+                            href="http://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_422a_en.pdf">ec
+                            europa</a>
                         </div>
                         <div>
-                            Freepik Company . (2013). FLATICON. Forrás: https://www.flaticon.com/
+                            Freepik Company . (2013). FLATICON.
+                            Forrás:<a href="https://www.flaticon.com/">flat icon</a>
                         </div>
                         <div>
                             Glász, A. (2017). Városon belüli közlekedési és kerékpározási szokások kérdőíves
@@ -1004,59 +1011,66 @@ export class Essay extends Component {
                             (old.: 537-543.). Győr.
                         </div>
                         <div>
-                            Graser, A. (2016. 10 23). More icons &amp; symbols for QGIS. Letöltés dátuma: 2019. 05
-                            18,
-                            forrás: https://anitagraser.com/2016/10/23/more-icons-symbols-for-qgis/
+                            Graser, A. (2016. 10 23). More icons &amp; symbols for QGIS. Letöltés dátuma: 2019. 05. 18.
+                            Forrás:<a
+                            href="https://anitagraser.com/2016/10/23/more-icons-symbols-for-qgis/">anitagraser</a>
                         </div>
                         <div>
-                            Kerékpáros Miskolc Egyesület. (dátum nélk.). Letöltés dátuma: 2019. 05 16, forrás:
-                            http://kerekparosmiskolc.net/
+                            Kerékpáros Miskolc Egyesület. (dátum nélk.). Letöltés dátuma: 2019. 05. 16.
+                            Forrás:<a href="http://kerekparosmiskolc.net/">kerékpáros miskolc</a>
                         </div>
                         <div>
                             Kunhalmi, Z. (2019. január 21.). Ígértük, most megmutatjuk - forgalomszámlálási adatok.
-                            Forrás:
-                            http://kerekparosmiskolc.net/2019/01/igertuk-most-megmutatjuk-forgalomszamlalasi-adatok/
+                            Forrás:<a
+                            href="http://kerekparosmiskolc.net/2019/01/igertuk-most-megmutatjuk-forgalomszamlalasi-adatok/">kerékpáros
+                            miskolc</a>
                         </div>
                         <div>
                             Medián, M. k. (2018. július). (I. é. Minisztérium, Szerk.) Magyarország: Innovációs és
-                            Technológiai Minisztérium. Forrás: https://kerekparosklub.hu/kerekparoskutatas_2018
+                            Technológiai Minisztérium.
+                            Forrás:<a href="https://kerekparosklub.hu/kerekparoskutatas_2018">kerékpáros klub</a>
                         </div>
                         <div>
                             Miskolc bor&amp;gasztro kerékpáros térkép. (dátum nélk.). Nyíregyháza: NYÍR-KARTA BT.
                         </div>
                         <div>
-                            Miskolc ITS. (2013). Miskolc kerékpárútjai. Miskolc Integrált Településfejlesztési
-                            Stratégia
-                            mellékletek, 339-341. Miskolc. Forrás:
-                            http://miskolcvaros2020.hu/sites/default/files/dokumentumok/ivs-mellekletek.pdf
+                            Miskolc ITS. (2013). Miskolc kerékpárútjai. Miskolc Integrált Településfejlesztési Stratégia
+                            mellékletek, 339-341. Miskolc.
+                            Forrás:<a
+                            href="http://miskolcvaros2020.hu/sites/default/files/dokumentumok/ivs-mellekletek.pdf"
+                        >
+                            miskolc város
+                        </a>
                         </div>
                         <div>
                             MVK Zrt. (2013). Kerékpáros közlekedés. Miskolc Város Fenntartható Közlekedési Terve,
                             25-26.
                             (MVK Miskolc Városi Közlekedési Zrt., Szerk.) Miskolc. Forrás:
-                            http://kerekparosmiskolc.net/wp-
-                            content/uploads/2013/12/Miskolc_SUMP_MVK_131030_végleges.pdf
+                            <a href="http://kerekparosmiskolc.net/wp-content/uploads/2013/12/Miskolc_SUMP_MVK_131030_végleges.pdf">kerékpáros
+                                miskolc</a>
                         </div>
                         <div>
                             MVK Zrt. (2013). Kerékpáros közlekedés. Miskolc Város Fenntartható Közlekedési Terve,
                             25-26.
                             (MVK Miskolc Városi Közlekedési Zrt., Szerk.) Miskolc. Forrás:
-                            http://kerekparosmiskolc.net/wp-content/uploads/2013/12/Miskolc_SUMP_MVK_131030_végleges.pdf
+                            <a href="http://kerekparosmiskolc.net/wp-content/uploads/2013/12/Miskolc_SUMP_MVK_131030_végleges.pdf">kerékpáros
+                                miskolc</a>
                         </div>
                         <div>
                             MVK Zrt. (dátum nélk.). Kerékpárral a közösségi közlekedésben. Letöltés dátuma: 2019..
                             05.
-                            09., forrás: http://mvkzrt.hu/kerekparral-kozossegi-kozlekedesben
+                            09. Forrás:
+                            <a href="http://mvkzrt.hu/kerekparral-kozossegi-kozlekedesben">mvk zrt</a>
                         </div>
                         <div>
                             Plevnik, A. (2016. augusztus 15.). Public awareness about the effects of transport on
                             the
                             environment. Szlovén Köztársaság Várostervezési Intézete. Forrás:
-                            http://kos.arso.gov.si/en/content/public-awareness-about-effects-transport-environment-2
+                            <a href="http://kos.arso.gov.si/en/content/public-awareness-about-effects-transport-environment-2">Arso.gov.si</a>
                         </div>
                         <div>
-                            Ungvári Zs. (dátum nélk.). QGIS feladatgyűjtemény. Letöltés dátuma: 2019.. május 09.,
-                            forrás: http://mercator.elte.hu/~ungvarizs/
+                            Ungvári Zs. (dátum nélk.). QGIS feladatgyűjtemény. Letöltés dátuma: 2019. május 09.
+                            Forrás:<a href="http://mercator.elte.hu/~ungvarizs/">ELTE marcator</a>
                         </div>
                         <div>
                             Zsadányi, G. (1955). A miskolci Herman Ottó Múzeum közleményei. In H. O. (Miskolc), A
