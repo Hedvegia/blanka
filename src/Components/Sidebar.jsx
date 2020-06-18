@@ -5,7 +5,7 @@ const ContentsContainer = styled.div`
     display: flex;
     position: absolute;
     top: 2em;
-    background: rgba(229, 127, 165, 0.5);
+    background: #FFB9CC;
     color: #f8f9f8;
     border: 0px solid rgba(229, 127, 165, 0);
     border-radius: 0 5px 5px 0;
