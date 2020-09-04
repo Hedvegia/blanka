@@ -41,6 +41,7 @@ export const Introduction = ({ moveOnPage }) => {
       <Title>Két keréken négy kapun át</Title>
       <SubTitle>Germus Blanka</SubTitle>
       <ButtonContainer>
+        <Button moveOnPage={() => moveOnPage('#cv')} text={'Önéletrajz'} type='Line' />
         <Button moveOnPage={() => moveOnPage('#map')} text={'Térkép'} type='Line' />
         <Button moveOnPage={() => moveOnPage('#essay')} text={'Szöveg'} type='Line' />
       </ButtonContainer>
